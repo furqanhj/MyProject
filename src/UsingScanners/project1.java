@@ -26,6 +26,6 @@ public class project1 {
     }
 
     public static void main(String[] args) {
-        System.out.println("The entered name is: " + printName());
+        System.out.println("So your name and age is: " + printName());
     }
 }
