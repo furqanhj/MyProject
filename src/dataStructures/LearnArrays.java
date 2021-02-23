@@ -1,5 +1,7 @@
 package dataStructures;
 
+import java.util.Arrays;
+
 public class LearnArrays {
 
     /*
@@ -22,12 +24,19 @@ public class LearnArrays {
         arrayOfNames[2] = "Muhammad";
         arrayOfNames[3] = "Moosa";
 
+        // Declare an Array (Method 2):
+        String[] arrayOfNames2 = new String[4];
 
+        // Initializing an Arra y (Method 2):
+        arrayOfNames2[0] = "Javed";
+        arrayOfNames2[1] = "Munawar";
+        arrayOfNames2[2] = "Faisal";
+        arrayOfNames2[3] = "Fareeha";
 
+        // Declaration and Initialization of Array (Method 3):
+        String[] arrayOfNames3 = { "Zahid", "Kathleen", "Yafi", "Yasir" };
 
+        System.out.println(Arrays.toString(arrayOfNames3));
 
     }
-
-
-
 }
