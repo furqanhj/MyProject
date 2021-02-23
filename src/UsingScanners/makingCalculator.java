@@ -9,11 +9,11 @@ public class makingCalculator {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Enter the first number: ");
-        num1 = Double.parseDouble(scanner.nextLine());
+        System.out.print("Enter the first number: ");
+        num1 = scanner.nextDouble();
 
-        System.out.println("Enter the second number");
-        num2 = Double.parseDouble(scanner.nextLine());
+        System.out.print("Enter the second number: ");
+        num2 = scanner.nextDouble();
 
         System.out.println("By adding both your numbers, the answer is: " + doAddition());
         System.out.println("By subtracting both your numbers, the answer is: " + doSubtraction());
@@ -24,14 +24,17 @@ public class makingCalculator {
     }
 
     public static double doAddition(){
+
         return num1 + num2;
     }
 
     public static double doSubtraction(){
+
         return num1 - num2;
     }
 
     public static double doMultiplication(){
+
         return num1 * num2;
     }
 
