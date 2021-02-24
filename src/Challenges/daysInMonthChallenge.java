@@ -10,24 +10,24 @@ public class daysInMonthChallenge {
 
     public int daysOfMonth(String nameOfMonth) {
 
-        int daysInNum = -1;
+        int numOfDays = -1;
 
         switch (nameOfMonth) {
             case "January": case "March": case "May": case "July": case "August": case "October": case "December":
-                daysInNum = 31;
+                numOfDays = 31;
                 break;
 
             case "February":
-                daysInNum = 28;
+                numOfDays = 28;
                 break;
 
             case "April": case "June": case "September": case "November":
-                daysInNum = 31;
+                numOfDays = 31;
                 break;
 
             default:
-                return daysInNum;
+                return numOfDays;
         }
-        return daysInNum;
+        return numOfDays;
     }
 }
