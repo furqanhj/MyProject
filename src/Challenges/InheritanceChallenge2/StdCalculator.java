@@ -13,16 +13,66 @@ public class StdCalculator extends Calculator {
     public void AdditionMethod() {
         double input = 0;
         Scanner stdIn = new Scanner(System.in);
+        System.out.println("***Here we are ADDING different numbers***");
+        System.out.print("Please enter a number: ");
+        input = stdIn.nextDouble();
 
-        while (true) {
-            System.out.print("Enter a number: ");
+        if (input <= 0) {
+            System.out.println("Please enter a valid number: ");
             input = stdIn.nextDouble();
-            input += input;
-
-            if (input <= 0) {
-                break;
-            }
+        } else if (stdIn.hasNextDouble()){
+            System.out.println("Please enter another number or press \"ENTER\": ");
+            input += stdIn.nextDouble();
         }
-        System.out.print("The total for the entered numbers is: " + input);
+        System.out.println("The total after ADDING all numbers is:\n" + input);
+    }
+
+    public void SubtractionMethod() {
+        double input = 0;
+        Scanner stdIn = new Scanner(System.in);
+        System.out.println("***Here we are SUBTRACTING different numbers***");
+        System.out.print("Please enter a number: ");
+
+        while (stdIn.hasNext()) {
+            input -= stdIn.nextDouble();
+            System.out.print("Please enter another number or press \"ENTER\": ");
+            if (input <= 0)
+                break;
+        }
+        stdIn.close();
+        System.out.println("Your subtraction total is: " + input);
+    }
+
+    public void MultiplicationMethod() {
+        double input = 0;
+        Scanner stdIn = new Scanner(System.in);
+        System.out.println("***Here we are MULTIPLYING different numbers***");
+        System.out.print("Please enter a number: ");
+
+        while (stdIn.hasNext()){
+            input *= stdIn.nextDouble();
+            System.out.print("Please enter another number or press \"ENTER\": ");
+            if (input<=0)
+                break;
+        }
+        stdIn.close();
+        System.out.println("Your total after multiplying all numbers is:\n" + input);
+
+    }
+
+    public void DivisionMethod() {
+        double input = 0;
+        Scanner stdIn = new Scanner(System.in);
+        System.out.println("***Here we are DIVIDING different numbers***");
+        System.out.print("Please enter a number: ");
+
+        while (stdIn.hasNext()){
+            input /= stdIn.nextDouble();
+            System.out.print("Please enter another number or press \"ENTER\": ");
+            if (input<=0)
+                break;
+        }
+        stdIn.close();
+        System.out.println("Your total after dividing all numbers is:\n" + input);
     }
 }
