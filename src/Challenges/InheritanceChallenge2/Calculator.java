@@ -18,6 +18,6 @@ public class Calculator extends Electronics{
 
     @Override
     public void switchOff() {
-        System.out.println("OFF");
+        System.out.println("Switching off...\nOFF");
     }
 }
