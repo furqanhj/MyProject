@@ -57,7 +57,7 @@ public class StdCalculator extends Calculator {
             System.out.print("Please enter another number or press \"0\": ");
             input = stdIn.nextDouble();
             sum = sum * input;
-        } while (input > 0);
+        } while (input <= 0);
 
         System.out.println("THE CURRENT TOTAL IS: " + sum);
         System.out.println(" ");
