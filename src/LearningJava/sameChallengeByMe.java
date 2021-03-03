@@ -18,13 +18,10 @@ public class sameChallengeByMe {
         int count = 0;
 
         // Using For-each loop.
-        for (char v : vowels) {
-            for (char t : textArray) {
-                if (v == t) {
+        for (char v : vowels)
+            for (char t : textArray)
+                if (v == t)
                     count++;
-                }
-            }
-        }
         return count;
     }
 }
